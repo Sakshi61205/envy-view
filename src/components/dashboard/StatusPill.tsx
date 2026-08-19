@@ -13,7 +13,7 @@ const labels: Record<SensorStatus, string> = {
   low: "Low",
 };
 
-export function StatusPill({ status, className }: { status: SensorStatus; className?: string }) {
+export function StatusPill({ status, className }: { status: SensorStatus; className?: string | undefined }) {
   return (
     <span
       className={cn(

@@ -23,8 +23,8 @@ export function ConnectionBar({
   snapshot,
   loading,
 }: {
-  snapshot?: SensorSnapshot;
-  loading?: boolean;
+  snapshot?: SensorSnapshot | undefined;
+  loading?: boolean | undefined;
 }) {
   const now = useClock();
   const status: ConnectionStatus = loading ? "connecting" : (snapshot?.connection ?? "offline");

@@ -11,7 +11,7 @@ interface Props {
   icon: ReactNode;
   range: { min: number; max: number };
   accent: "temp" | "hum";
-  loading?: boolean;
+  loading?: boolean | undefined;
 }
 
 export function MetricCard({
