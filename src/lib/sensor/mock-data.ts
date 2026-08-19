@@ -40,7 +40,7 @@ export function generateHistory(points: number, stepMinutes: number): SensorRead
 
 export function getMockSnapshot(): SensorSnapshot {
   const history = generateHistory(24, 30);
-  const current = history[history.length - 1];
+  const current = history[history.length - 1]!;
   return {
     device: DEVICE,
     connection: "connected",
